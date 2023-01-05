@@ -19,9 +19,10 @@ process.on("uncaughtException", (err) => {
 //connect databas
 connectDb()
 
-//middleware
+//Route import
 
 app.use('/api/v1', require('./routes/ProductRoute'))
+app.use('/api/v1',require("./routes/UserRoute"))
 
 //middleware for errors
 
